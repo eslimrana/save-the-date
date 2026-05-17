@@ -73,7 +73,7 @@ export default function PhotoReveal() {
       </motion.div>
 
       {/* Photo Booth Strips */}
-      <div className="relative z-20 mt-3">
+      <div className="relative z-20 mt-16 mb-8">
         {/* First Strip - Bottom, tilted left */}
         <motion.div
           className="relative -ml-8"

@@ -42,6 +42,7 @@ export default function Invitation({ onOpen }: InvitationProps) {
           onEnded={handleVideoEnd}
           playsInline
           muted
+          poster="/photos/envelope_poster.png"
         >
           <source src="/R&E.mp4" type="video/mp4" />
         </video>
