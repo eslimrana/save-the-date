@@ -45,7 +45,7 @@ export default function EventDetails({ onRSVPClick }: EventDetailsProps) {
         </motion.div>
 
         {/* Divider */}
-        <div className="flex items-center justify-center gap-3 mb-12">
+        <div className="flex items-center justify-center gap-3 mb-4">
           <div className="w-20 h-px bg-gradient-to-r from-transparent via-gold/30 to-gold/30" />
           <div className="text-black text-xl">✦</div>
           <div className="w-20 h-px bg-gradient-to-l from-transparent via-gold/30 to-gold/30" />
@@ -57,8 +57,23 @@ export default function EventDetails({ onRSVPClick }: EventDetailsProps) {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          Düğünümüzde sizi aramızda görmek, bu güzel başlangıca sizinle birlikte adım atmak en büyük dileğimiz.
+          <p className="font-serif text-2xl md:text-3xl text-black tracking-widest mb-1">
+            Kavgacı & Emiroğlu
+          </p>
+          <p className="font-sans text-xs tracking-[0.3em] text-black/80 mb-1">
+            Aileleri olarak
+          </p>
+          <p className="font-serif text-base md:text-lg italic text-black/70 leading-relaxed">
+            Düğünümüzde sizi aramızda görmek, bu güzel başlangıca sizinle birlikte adım atmak en büyük dileğimizdir.
+          </p>
         </motion.p>
+
+        {/* Divider */}
+        <div className="flex items-center justify-center gap-3 mb-4">
+          <div className="w-20 h-px bg-gradient-to-r from-transparent via-gold/30 to-gold/30" />
+          <div className="text-black text-xl">✦</div>
+          <div className="w-20 h-px bg-gradient-to-l from-transparent via-gold/30 to-gold/30" />
+        </div>
 
         {/* Venue */}
         <motion.div
