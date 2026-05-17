@@ -51,6 +51,15 @@ export default function EventDetails({ onRSVPClick }: EventDetailsProps) {
           <div className="w-20 h-px bg-gradient-to-l from-transparent via-gold/30 to-gold/30" />
         </div>
 
+        <motion.p
+          className="font-serif text-center text-black/70 text-base md:text-lg italic leading-relaxed mb-12"
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.3 }}
+        >
+          Düğünümüzde sizi aramızda görmek, bu güzel başlangıca sizinle birlikte adım atmak en büyük dileğimiz.
+        </motion.p>
+
         {/* Venue */}
         <motion.div
           className="text-center mb-12"
@@ -103,7 +112,7 @@ export default function EventDetails({ onRSVPClick }: EventDetailsProps) {
               <span className="text-[#C9A961]/60 text-xs">✦</span>
               <div className="w-12 h-px bg-[#C9A961]/40" />
             </div>
-            <p className="font-sans text-xs text-black/50 tracking-wide italic max-w-xs">
+            <p className="font-sans text-sm text-black/80 tracking-wide italic max-w-xs">
               Düğünümüz sadece yetişkinlere özeldir
               <br />
               Çocuklarınıza iyi geceler dileriz
