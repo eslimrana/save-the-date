@@ -5,9 +5,9 @@ import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
 const photos = [
-  '/photos/photo1.png',
-  '/photos/photo2.png',
-  '/photos/photo3.png',
+  '/photos/photo_1.png',
+  '/photos/photo_2.png',
+  '/photos/photo_3.png',
 ];
 
 export default function PhotoReveal() {
