@@ -132,7 +132,7 @@ export default function RSVPModal({ onClose }: RSVPModalProps) {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="cursor-pointer w-full py-3 bg-[#2C2C2C] text-cream rounded-lg border-2 border-gold/30
+                className="cursor-pointer w-full py-3 bg-[#2C2C2C] text-white rounded-lg border-2 border-gold/30
                          hover:bg-[#D4AF37] hover:text-[#2C2C2C] transition-all duration-300
                          font-sans tracking-widest disabled:opacity-50 disabled:cursor-not-allowed"
               >
