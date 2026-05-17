@@ -44,7 +44,6 @@ export default function Invitation({ onOpen }: InvitationProps) {
           onPlay={() => setHasStarted(true)}
           playsInline
           muted
-          poster="/photos/envelope_poster.png"
         >
           <source src="/R&E.mp4" type="video/mp4" />
           {!hasStarted && (
