@@ -30,7 +30,7 @@ export default function EventDetails({ onRSVPClick }: EventDetailsProps) {
         >
           <div className="inline-block mb-4">
             <h3 className="font-sans text-xs tracking-[0.4em] text-black/60 mb-3">
-              TARİH
+              DÜĞÜN TARİHİ
             </h3>
             <div className="w-12 h-px bg-gold mx-auto" />
           </div>
