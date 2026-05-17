@@ -11,6 +11,7 @@ export default function Invitation({ onOpen }: InvitationProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [videoEnded, setVideoEnded] = useState(false);
+  const [hasStarted, setHasStarted] = useState(false);
 
   const handleClick = () => {
     if (videoRef.current && !isPlaying) {
@@ -40,11 +41,19 @@ export default function Invitation({ onOpen }: InvitationProps) {
           ref={videoRef}
           className="w-full h-full object-contain"
           onEnded={handleVideoEnd}
+          onPlay={() => setHasStarted(true)}
           playsInline
           muted
           poster="/photos/envelope_poster.png"
         >
           <source src="/R&E.mp4" type="video/mp4" />
+          {!hasStarted && (
+            <img
+              src="/photos/envelope_poster.png"
+              alt=""
+              className="absolute inset-0 w-full h-full object-contain pointer-events-none"
+            />
+          )}
         </video>
 
         {/* Tap to open instruction */}
