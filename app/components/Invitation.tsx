@@ -46,14 +46,14 @@ export default function Invitation({ onOpen }: InvitationProps) {
           muted
         >
           <source src="/R&E.mp4" type="video/mp4" />
-          {!hasStarted && (
-            <img
-              src="/photos/envelope_poster.png"
-              alt=""
-              className="absolute inset-0 w-full h-full object-contain pointer-events-none"
-            />
-          )}
         </video>
+        {!hasStarted && (
+          <img
+            src="/photos/envelope_poster.png"
+            alt=""
+            className="absolute inset-0 w-full h-full object-contain pointer-events-none"
+          />
+        )}
 
         {/* Tap to open instruction */}
         <AnimatePresence>
