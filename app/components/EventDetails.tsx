@@ -51,7 +51,7 @@ export default function EventDetails({ onRSVPClick }: EventDetailsProps) {
           <div className="w-20 h-px bg-gradient-to-l from-transparent via-gold/30 to-gold/30" />
         </div>
 
-        <motion.p
+        <motion.div
           className="font-serif text-center text-black/70 text-base md:text-lg italic leading-relaxed mb-12"
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -66,7 +66,7 @@ export default function EventDetails({ onRSVPClick }: EventDetailsProps) {
           <p className="font-serif text-base md:text-lg italic text-black/70 leading-relaxed">
             Düğünümüzde sizi aramızda görmek, bu güzel başlangıca sizinle birlikte adım atmak en büyük dileğimizdir.
           </p>
-        </motion.p>
+        </motion.div>
 
         {/* Divider */}
         <div className="flex items-center justify-center gap-3 mb-4">
