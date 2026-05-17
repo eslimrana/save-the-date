@@ -41,7 +41,7 @@ export default function Invitation({ onOpen }: InvitationProps) {
           ref={videoRef}
           className="w-full h-full object-contain"
           onEnded={handleVideoEnd}
-          onPlay={() => setHasStarted(true)}
+          onTimeUpdate={() => setHasStarted(true)}
           playsInline
           muted
         >
