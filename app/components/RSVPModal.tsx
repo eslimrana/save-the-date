@@ -122,10 +122,6 @@ export default function RSVPModal({ onClose }: RSVPModalProps) {
                   <option value="2" style={{ color: '#2C2C2C' }}>2 kişi</option>
                   <option value="3" style={{ color: '#2C2C2C' }}>3 kişi</option>
                   <option value="4" style={{ color: '#2C2C2C' }}>4 kişi</option>
-                  <option value="5" style={{ color: '#2C2C2C' }}>5 kişi</option>
-                  <option value="6" style={{ color: '#2C2C2C' }}>6 kişi</option>
-                  <option value="7" style={{ color: '#2C2C2C' }}>7 kişi</option>
-                  <option value="8" style={{ color: '#2C2C2C' }}>8+ kişi</option>
                 </select>
               </div>
 

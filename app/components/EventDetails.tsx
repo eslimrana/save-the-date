@@ -57,7 +57,7 @@ export default function EventDetails({ onRSVPClick }: EventDetailsProps) {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          <p className="font-serif text-2xl md:text-3xl text-black tracking-widest mb-1">
+          <p className="font-serif text-xl md:text-3xl text-black tracking-widest mb-1 whitespace-nowrap">
             Kavgacı & Emiroğlu
           </p>
           <p className="font-sans text-xs tracking-[0.3em] text-black/80 mb-1">
@@ -127,10 +127,10 @@ export default function EventDetails({ onRSVPClick }: EventDetailsProps) {
               <span className="text-[#C9A961]/60 text-xs">✦</span>
               <div className="w-12 h-px bg-[#C9A961]/40" />
             </div>
-            <p className="font-sans text-sm text-black/80 tracking-wide italic max-w-xs">
+            <p className="font-sans text-s text-black/80 tracking-wide italic max-w-xs">
               Düğünümüz sadece yetişkinlere özeldir
               <br />
-              Çocuklarınıza iyi geceler dileriz
+              Çocuklara iyi geceler dileriz
             </p>
           </div>
         </motion.div>
