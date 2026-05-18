@@ -77,7 +77,7 @@ export default function Invitation({ onOpen }: InvitationProps) {
                 }}
               >
                 <p className="font-sans text-white/60 text-sm tracking-[0.3em]">
-                  TIKLAYARAK AÇ
+                  TIKLAYARAK AÇIN
                 </p>
                 <div className="w-8 h-px bg-white/30 mx-auto mt-2" />
               </motion.div>
