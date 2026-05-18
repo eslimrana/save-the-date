@@ -21,38 +21,9 @@ export default function EventDetails({ onRSVPClick }: EventDetailsProps) {
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8 }}
       >
-        {/* Date */}
-        <motion.div
-          className="text-center mb-8"
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.2 }}
-        >
-          <div className="inline-block mb-4">
-            <h3 className="font-sans text-xs tracking-[0.4em] text-black/60 mb-3">
-              DÜĞÜN TARİHİ
-            </h3>
-            <div className="w-12 h-px bg-gold mx-auto" />
-          </div>
-          
-          <h2 className="font-serif text-5xl md:text-6xl text-black mb-3">
-            25 Temmuz 2026
-          </h2>
-          
-          <p className="font-sans text-base text-black/70">
-            Cumartesi - Saat 19:00
-          </p>
-        </motion.div>
-
-        {/* Divider */}
-        <div className="flex items-center justify-center gap-3 mb-6">
-          <div className="w-20 h-px bg-gradient-to-r from-transparent via-gold/30 to-gold/30" />
-          <div className="text-black text-xl">✦</div>
-          <div className="w-20 h-px bg-gradient-to-l from-transparent via-gold/30 to-gold/30" />
-        </div>
 
         <motion.div
-          className="font-serif text-center text-black/70 text-base md:text-lg italic leading-relaxed mb-12"
+          className="font-serif text-center text-black/70 text-base md:text-lg italic leading-relaxed mb-6"
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.3 }}
@@ -64,7 +35,37 @@ export default function EventDetails({ onRSVPClick }: EventDetailsProps) {
             Aileleri olarak
           </p>
           <p className="font-serif text-base md:text-lg italic text-black/70 leading-relaxed">
-            Düğünümüzde sizi aramızda görmek, bu güzel başlangıca sizinle birlikte adım atmak en büyük dileğimizdir.
+            Bu güzel başlangıca adım atarken sizleri de aramızda görmekten mutluluk duyarız.
+          </p>
+        </motion.div>
+
+        {/* Divider */}
+        <div className="flex items-center justify-center gap-3 mb-4">
+          <div className="w-20 h-px bg-gradient-to-r from-transparent via-gold/30 to-gold/30" />
+          <div className="text-black text-xl">✦</div>
+          <div className="w-20 h-px bg-gradient-to-l from-transparent via-gold/30 to-gold/30" />
+        </div>
+
+        {/* Date */}
+        <motion.div
+          className="text-center mb-8"
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
+          <div className="inline-block mb-4">
+            <h3 className="font-sans text-xs tracking-[0.4em] text-black/60">
+              DÜĞÜN TARİHİ
+            </h3>
+            <div className="w-12 h-px bg-gold mx-auto" />
+          </div>
+          
+          <h2 className="font-serif text-5xl md:text-6xl text-black mb-3">
+            25 Temmuz 2026
+          </h2>
+          
+          <p className="font-sans text-base text-black/70">
+            Cumartesi - Saat 19:00
           </p>
         </motion.div>
 
@@ -81,14 +82,7 @@ export default function EventDetails({ onRSVPClick }: EventDetailsProps) {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.4 }}
-        >
-          <div className="inline-block mb-4">
-            <h3 className="font-sans text-xs tracking-[0.4em] text-black/60 mb-3">
-              MEKAN
-            </h3>
-            <div className="w-12 h-px bg-gold mx-auto" />
-          </div>
-          
+        > 
           <h2 className="font-serif text-3xl md:text-4xl text-black mb-3">
             Danıştay Eğitim Tesisi
           </h2>
