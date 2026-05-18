@@ -23,7 +23,7 @@ export default function EventDetails({ onRSVPClick }: EventDetailsProps) {
       >
         {/* Date */}
         <motion.div
-          className="text-center mb-12"
+          className="text-center mb-8"
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -40,12 +40,12 @@ export default function EventDetails({ onRSVPClick }: EventDetailsProps) {
           </h2>
           
           <p className="font-sans text-base text-black/70">
-            Cumartesi
+            Cumartesi - Saat 19:00
           </p>
         </motion.div>
 
         {/* Divider */}
-        <div className="flex items-center justify-center gap-3 mb-4">
+        <div className="flex items-center justify-center gap-3 mb-6">
           <div className="w-20 h-px bg-gradient-to-r from-transparent via-gold/30 to-gold/30" />
           <div className="text-black text-xl">✦</div>
           <div className="w-20 h-px bg-gradient-to-l from-transparent via-gold/30 to-gold/30" />
@@ -77,7 +77,7 @@ export default function EventDetails({ onRSVPClick }: EventDetailsProps) {
 
         {/* Venue */}
         <motion.div
-          className="text-center mb-12"
+          className="text-center mb-4"
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.4 }}
@@ -116,7 +116,7 @@ export default function EventDetails({ onRSVPClick }: EventDetailsProps) {
         </a>
 
         <motion.div
-          className="text-center mb-1 mt-12"
+          className="text-center mb-1 mt-6"
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 0.8, delay: 0.5 }}
@@ -132,6 +132,11 @@ export default function EventDetails({ onRSVPClick }: EventDetailsProps) {
               <br />
               Çocuklara iyi geceler dileriz
             </p>
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-px bg-[#C9A961]/40" />
+              <span className="text-[#C9A961]/60 text-xs">✦</span>
+              <div className="w-12 h-px bg-[#C9A961]/40" />
+            </div>
           </div>
         </motion.div>
 

@@ -32,7 +32,7 @@ export default function PhotoReveal() {
     <section className="min-h-screen relative flex items-center justify-center overflow-hidden py-20">
       {/* Background overlay */}
       <motion.div
-        className="absolute inset-0 bg-gradient-to-b from-black via-black/80 to-black z-10"
+        className="absolute inset-0 bg-black z-10"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.3 }}
